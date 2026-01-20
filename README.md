@@ -63,7 +63,7 @@ Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/foodly-flutter.git](https://github.com/tu-usuario/foodly-flutter.git)
+   git clone [https://github.com/Junse99/final-project.git](https://github.com/Junse99/final-project.git)
    ```
 
 2. **Clonar el repositorio:**
