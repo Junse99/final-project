@@ -21,11 +21,13 @@ A continuación, se muestra la implementación de las tres pantallas principales
 La consistencia visual se mantiene mediante el uso de tokens centralizados en `lib/theme/app_theme.dart`.
 
 ### Paleta de Colores (Emerald Fresh)
-* **Primary:** `#10B981` (Verde Esmeralda) - Botones y precios.
-* **Secondary:** `#34D399` (Verde Lima) - Acentos y fondos.
-* **Background:** `#F9FAFB` (Gris Ultra Claro) - Fondo general.
-* **Text Dark:** `#111827` (Casi Negro) - Títulos.
-* **Text Light:** `#6B7280` (Gris) - Subtítulos.
+
+* **Primary:** #FF5722 (Naranja Vibrante) - Utilizado en branding, botones y elementos de acción.
+* **Secondary:** #FFC107 (Ámbar) - Utilizado para precios y acentos visuales.
+* **Background:** #FAFAFA (Gris Ultra Claro) - Fondo de la aplicación para mayor legibilidad.
+* **Text Dark:** #212121 (Casi Negro) - Jerarquía principal y títulos.
+* **ext Light:** #757575 (Gris Medio) - Descripciones y texto secundario.
+
 
 ### Tipografía & Grid
 * **Fuente:** Inter (implementada con jerarquías Bold, SemiBold y Regular).
