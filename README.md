@@ -1,16 +1,81 @@
-# final_project
+# 🍔 Foodly - Figma to Flutter 
 
-A new Flutter project.
+**Foodly** es una aplicación móvil de delivery de comida construida con Flutter. Este proyecto demuestra la implementación técnica de un prototipo de alta fidelidad, respetando Design Tokens, sistemas de rejilla y una arquitectura de componentes escalable.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Capturas de Pantalla
 
-A few resources to get you started if this is your first Flutter project:
+A continuación, se muestra la implementación de las tres pantallas principales.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| 1. Splash Screen | 2. Home Screen | 3. Product Detail |
+| :---: | :---: | :---: |
+| ![Splash Screen](./lib/assets/splash.png) | ![Home Screen](./lib/assets/home.png) | ![Product Detail](./lib/assets/detail.png) |
+| *Branding y carga inicial* | *Categorías y Populares* | *Información y compra* |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+---
+
+## 🎨 Especificaciones de Diseño (Tokens)
+
+La consistencia visual se mantiene mediante el uso de tokens centralizados en `lib/theme/app_theme.dart`.
+
+### Paleta de Colores (Emerald Fresh)
+* **Primary:** `#10B981` (Verde Esmeralda) - Botones y precios.
+* **Secondary:** `#34D399` (Verde Lima) - Acentos y fondos.
+* **Background:** `#F9FAFB` (Gris Ultra Claro) - Fondo general.
+* **Text Dark:** `#111827` (Casi Negro) - Títulos.
+* **Text Light:** `#6B7280` (Gris) - Subtítulos.
+
+### Tipografía & Grid
+* **Fuente:** Inter (implementada con jerarquías Bold, SemiBold y Regular).
+* **8-pt Grid System:** Todo el espaciado (padding/margin) se basa en múltiplos de 8 (4, 8, 16, 24, 32).
+
+---
+
+## ✨ Características Implementadas
+
+1. **Splash Screen:** Transición automática tras 2.5 segundos con branding circular.
+2. **Sistema de Categorías:** Lista horizontal interactiva que cambia de estado (color y sombra) al ser seleccionada.
+3. **Buscador Moderno:** Input estilizado con iconografía basada en emojis.
+4. **Lista de Productos:** Componente reutilizable `_ProductCard` con gestión de sombras y bordes redondeados.
+5. **Navegación Dinámica:** Paso de argumentos mediante rutas para la visualización de detalles del producto.
+6. **Defensa de Datos:** Implementación de Null Safety y conversiones seguras de tipo (`toString()` y `??`) para evitar errores en tiempo de ejecución.
+
+---
+
+## 📁 Estructura del Proyecto
+
+```text
+lib/
+├── main.dart                 # Configuración de rutas y tema global.
+├── theme/
+│   └── app_theme.dart        # Design Tokens (Colores, Spacing, Estilos).
+└── screens/
+    ├── splash_screen.dart    # Lógica de entrada.
+    ├── home_screen.dart      # Dashboard con filtros y productos.
+    └── product_detail_screen.dart # Detalle y acción de compra.
+```
+
+## 🚀 Instalación y Uso
+
+Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/foodly-flutter.git](https://github.com/tu-usuario/foodly-flutter.git)
+   ```
+
+2. **Clonar el repositorio:**
+  Ejecuta este comando en la raíz del proyecto para descargar los paquetes necesarios:
+  
+   ```bash
+   flutter pub get
+   ```
+
+3. **Ejecutar la aplicación:**
+  Asegúrate de tener un emulador abierto o un dispositivo conectado y lanza el proyecto:
+
+   ```bash
+   flutter pub get
+   ```
